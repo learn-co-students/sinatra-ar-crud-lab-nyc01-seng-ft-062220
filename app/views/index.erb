@@ -1,0 +1,7 @@
+<h1>Here are the articles brah:</h1>
+
+<h4>Click on these articles to see the content brah</h4> 
+ <% @articles.each do |article|  %>
+<a href="/articles/<%= article.id %>">
+<p><%= article.title  %></p>
+<% end %>
