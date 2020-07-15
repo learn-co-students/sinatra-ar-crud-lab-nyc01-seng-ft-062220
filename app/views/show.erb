@@ -1,0 +1,8 @@
+<h1>Show Page For <%= @article.title %></h1>
+<p><%= @article.content %></p>
+<p><a href=/articles>Return to Index</a></p>
+
+<form method="post" action="/articles/<%= @article.id %>">
+  <input type="hidden" name="_method" value="delete" />
+  <p>Delete?<input type="submit" /></p>
+</form>
