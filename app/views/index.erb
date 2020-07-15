@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Article List</h2>
+
+<ul>
+    <% @articles.select do |article|%>
+  <li><%= article.title %></li>
+  <% end%>
+</ul>  
